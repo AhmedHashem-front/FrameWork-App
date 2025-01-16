@@ -1,0 +1,55 @@
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
+  rel="stylesheet"
+/>
+<nav class="navbar navbar-expand-lg fixed-top " [class.scrolled]="isScrolled">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand font-weight-bold text-white fs-1 ms-5 text-uppercase"
+      routerLink="home"
+      >Start Framework
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto ps-5 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link font-weight-bold text-white fs-3 mx-1 text-uppercase"
+            routerLink="about"
+            routerLinkActive="bg-success rounded"
+            >About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link font-weight-bold text-white fs-3 mx-1 text-uppercase"
+            routerLink="portfolio"
+            routerLinkActive="bg-success rounded"
+            >portfolio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link font-weight-bold text-white fs-3 mx-1 text-uppercase"
+            routerLink="contact"
+            routerLinkActive="bg-success rounded"
+            >Contant</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

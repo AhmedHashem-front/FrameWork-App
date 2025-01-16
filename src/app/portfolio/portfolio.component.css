@@ -1,0 +1,76 @@
+.line {
+  height: 4px;
+  width: 80px;
+  background-color: rgb(44, 62, 80);
+}
+i {
+  color: rgb(44, 62, 80);
+}
+h1 {
+  color: rgb(44, 62, 80);
+}
+img {
+  width: 100% !important;
+  z-index: 2 !important;
+}
+.item:hover .layer {
+  pointer-events: auto; /* السماح بالتفاعل مع الطبقة عند التمرير */
+}
+
+.layer {
+  background-color: #1abc9ce6;
+  opacity: 0;
+  display: flex;
+
+  pointer-events: none;
+  transition: all 0.6s;
+}
+
+.item:hover .layer {
+  opacity: 1;
+}
+
+/* }
+.layer {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #1abc9ce6;
+
+  cursor: pointer;
+  transition: all 0.6s;
+pointer-events: none;
+} */
+/* .layer::after{
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #1abc9ce6;
+
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.6s;
+} */
+/* .layer:hover {
+  opacity: 1;
+} */
+.lightBoxContainer {
+  /* display: none !important; */
+
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgb(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.lightBox {
+  width: 500px;
+  height: 500px;
+  background-image: url(../../../public/img/poert1.png);
+  background-size: cover;
+  background-position: center;
+  /* background-color: aqua; */
+  width: 500px;
+  height: 500px;
+}

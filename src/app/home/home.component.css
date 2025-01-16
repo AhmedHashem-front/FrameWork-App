@@ -1,0 +1,11 @@
+main{
+    background-color:#1abc9c;
+}
+img{
+    border-radius: 50% !important;
+}
+.line{
+    height: 4px;
+    width: 80px;
+    background-color: white;
+}
